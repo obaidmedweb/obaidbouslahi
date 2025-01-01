@@ -3,232 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal page of Obaid Bouslahi showcasing projects and professional work.">
-    <meta name="keywords" content="Obaid Bouslahi, personal, projects, downloads, portfolio">
-    <meta name="author" content="Obaid Bouslahi">
-    <title>Obaid Bouslahi - Personal Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
-
-        body {
-            font-family: 'Tajawal', Arial, sans-serif;
-            direction: ltr;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #e3f2fd, #90caf9);
-            color: #333;
-        }
-        header {
-            background: linear-gradient(to right, #1565c0, #1e88e5);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
-            font-weight: 700;
-        }
-        nav {
-            margin: 15px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1.2em;
-            font-weight: 500;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 30px;
-            margin: 20px auto;
-            max-width: 800px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        }
-        section h2 {
-            color: #1e88e5;
-            border-bottom: 3px solid #1565c0;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            font-weight: 700;
-        }
-        section p, ul {
-            line-height: 1.8;
-            font-size: 1.1em;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        .cta {
-            padding: 30px;
-            margin: 20px auto;
-            max-width: 800px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-            text-align: center;
-        }
-        .cta h2 {
-            color: #1e88e5;
-            font-size: 1.8em;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-        .cta a {
-            display: inline-block;
-            background: linear-gradient(to right, #1e88e5, #1565c0);
-            color: white;
-            padding: 15px 40px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.3em;
-            font-weight: 500;
-            transition: background 0.3s ease;
-        }
-        .cta a:hover {
-            background: linear-gradient(to right, #1565c0, #0d47a1);
-        }
-        footer {
-            text-align: center;
-            background-color: #0d47a1;
-            color: white;
-            padding: 15px 0;
-            margin-top: 30px;
-            font-size: 1em;
-        }
-        footer p {
-            margin: 0;
-        }
-        .social-links {
-            margin-top: 15px;
-        }
-        .social-links a {
-            color: white;
-            margin: 0 15px;
-            font-size: 1.8em;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .social-links a:hover {
-            color: #1e88e5;
-        }
-
-        .program-image {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .program-image img {
-            max-width: 100%;
-            height: auto;
-        }
-        .language-switch {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .language-switch button {
-            background: linear-gradient(to right, #1e88e5, #1565c0);
-            color: white;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        .language-switch button:hover {
-            background: linear-gradient(to right, #1565c0, #0d47a1);
-        }
-
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-            nav a {
-                font-size: 1em;
-            }
-            section h2 {
-                font-size: 1.5em;
-            }
-            section p, ul {
-                font-size: 1em;
-            }
-            .cta a {
-                padding: 10px 20px;
-                font-size: 1em;
-            }
-            footer p {
-                font-size: 0.9em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.6em;
-            }
-            nav a {
-                font-size: 0.9em;
-                display: block;
-                margin: 5px 0;
-            }
-            .cta a {
-                padding: 10px 15px;
-                font-size: 1em;
-            }
-        }
-    </style>
+    <title>Obaid Bouslahi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Obaid Bouslahi - Personal Portfolio</h1>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#download">Downloads</a>
+            <div class="logo">Obaid Bouslahi</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am Obaid Bouslahi, a passionate developer with a focus on creating innovative solutions. My work spans various technologies, and I enjoy building impactful projects that solve real-world problems. Browse my portfolio to see some of the work I’ve done!</p>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Obaid Bouslahi</h1>
+            <h2>Mac & Web Developer</h2>
+            <p>Crafting exceptional digital experiences through innovative solutions</p>
+            <div class="social-links">
+                <a href="https://github.com/obaidmedweb" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/bosl.abid" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> QR Code Generator (macOS) - A program to convert text and images into QR codes.</li>
-            <li><strong>Project 2:</strong> Youtube Video Downloader (macOS).</li>
-            <li><strong>Project 3:</strong> Image Converter App (macOS)</li>
-            <li><strong>Project 4:</strong> Videos Converter App (macOS)</li>
-            <li><strong>Project 5:</strong> SEO Analysis Tool App (macOS)</li>
-        </ul>
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>MacOS Task Manager</h3>
+                <p>A powerful native MacOS application for efficient task management and productivity tracking. Built with Swift and SwiftUI, featuring real-time synchronization, custom notifications, and intuitive gesture controls.</p>
+            </div>
+            <div class="project-card">
+                <h3>E-Commerce Platform</h3>
+                <p>Full-stack web application built with React and Node.js. Features include user authentication, payment integration, real-time inventory management, and responsive design for optimal user experience across all devices.</p>
+            </div>
+            <div class="project-card">
+                <h3>Health Tracking App</h3>
+                <p>iOS application designed to monitor daily health metrics. Integrates with HealthKit, features custom workout plans, nutrition tracking, and progress visualization through interactive charts.</p>
+            </div>
+            <div class="project-card">
+                <h3>Smart Home Controller</h3>
+                <p>MacOS application for managing smart home devices. Supports multiple protocols, features automated scheduling, energy monitoring, and voice control integration.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Generator</h3>
+                <p>Web-based tool that helps developers create professional portfolios. Built with Vue.js and Firebase, featuring customizable templates, markdown support, and automatic deployment.</p>
+            </div>
+            <div class="project-card">
+                <h3>Crypto Trading Bot</h3>
+                <p>Automated cryptocurrency trading system built with Python. Implements advanced trading strategies, real-time market analysis, and risk management algorithms.</p>
+            </div>
+            <div class="project-card">
+                <h3>AR Business Card</h3>
+                <p>Innovative iOS application that transforms traditional business cards into interactive AR experiences. Features 3D animations, social media integration, and contact sharing.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="download" class="cta">
-        <h2>Download My Projects</h2>
-        <p>Click below to download some of my key projects.</p>
-        <a href="https://github.com/obaidmedweb/Qrgenerator/releases/tag/V1.0" download>Download Project 1</a><br><br>
-        <a href="https://github.com/obaidmedweb/obaidmedweb/releases/tag/v1.0" download>Download Project 2</a><br><br>
-        <a href="https://github.com/obaidmedweb/ImageConverterApp/releases/tag/v1.0" download>Download Project 3</a>
-        <a href="https://github.com/obaidmedweb/YoutubeVideoDownloadermacOS" download>Download Project 4</a>
-        <a href="https://github.com/obaidmedweb/seo_tool/releases/tag/V1.0" download>Download Project 5</a>
+    <section id="download" class="download">
+        <h2>Download Projects</h2>
+        <p>Check out my latest work and contributions</p>
+        <div class="download-buttons">
+            <a href="https://github.com/obaidmedweb?tab=repositories" class="btn">View on GitHub</a>
+            <a href="https://github.com/obaidmedweb?tab=repositories" class="btn">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>abidbenhammadi@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Tunisia,Gafsa, Redeyef 20120</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/obaidmedweb" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/bosl.abid" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Obaid Bouslahi - All Rights Reserved. Designed and developed by Obaid Bouslahi.</p>
-        <div class="social-links">
-            <a href="https://www.facebook.com/bosl.abid/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://github.com/obaidmedweb" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
+        <p>&copy; 2025 Obaid Bouslahi. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
